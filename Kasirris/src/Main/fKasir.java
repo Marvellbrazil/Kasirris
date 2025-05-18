@@ -1,8 +1,18 @@
 /*
+Project Java Form ini bertujuan untuk mengimplementasikan project dari laporan project work dengan mengumpulkan ilmu-ilmu yang didapat selama ini dan mengimplementasikan di satu project besar.
+*/
+
+// Author : Passcape (E:)
+
+
+/*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
+
+
 package Main;
+
 
 import java.awt.event.ActionEvent;
 import java.text.DecimalFormat;
@@ -15,10 +25,12 @@ import javax.swing.Timer;
 import javax.swing.UIManager;
 import javax.swing.table.DefaultTableModel;
 
+
 /**
  *
  * @author Passcape
  */
+
 public class fKasir extends javax.swing.JFrame {
 
     String namaPerusahaan = "PT. MAJU BERSAMA";
@@ -67,6 +79,7 @@ public class fKasir extends javax.swing.JFrame {
     /**
      * Creates new form fKasir
      */
+
     public fKasir() {
         initComponents();
         JTabbedPane1.setSelectedIndex(0);
@@ -842,6 +855,7 @@ public class fKasir extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
+//untuk menangkap jika adanya CNF Exception
             java.util.logging.Logger.getLogger(fKasir.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
             java.util.logging.Logger.getLogger(fKasir.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
@@ -854,6 +868,7 @@ public class fKasir extends javax.swing.JFrame {
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
+            //Buat method setVisible() ini selalu true!
             public void run() {
                 new fKasir().setVisible(true);
             }
